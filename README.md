@@ -3,7 +3,7 @@
 - Status: canonical source guide
 - Scope: public/customer/admin Web surfaces and Auth, Admin, Policy, and Route Check Workers
 - Owner: repository maintainer
-- Last verified: 2026-08-06
+- Last verified: 2026-08-23
 - Verification: protected `web-required` CI
 
 Canonical Web and control-plane source for Saturn Workspace. The project is
