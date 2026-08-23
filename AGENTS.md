@@ -3,7 +3,7 @@
 - Status: active repository instructions
 - Scope: `D:\SaturnWS\github-deploy\SaturnWorkspace`
 - Owner: repository maintainer
-- Last verified: 2026-08-01
+- Last verified: 2026-08-23
 - Verification: protected `web-required` CI and `tools/check-authority-surface.mjs`
 
 When this repository is used inside the full `D:\SaturnWS` workspace, the
