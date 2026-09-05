@@ -319,7 +319,19 @@
       "requires_complete_webrtc_candidate_gathering": true,
       "requires_measurement_host_resolution": true,
       "proxy_dns_requires_authoritative_per_attempt_evidence": true,
-      "current_proxy_dns_qualification_available": false,
+      "current_proxy_dns_qualification_available": true,
+      "proxy_dns_evidence": {
+        "browser_launch_policy": "host_resolution_disabled_for_this_proxy_process",
+        "provider_contract": "api_launch_args_override_profile_launch_args",
+        "network_observation": "attempt_bound_measurement_hostname_reached",
+        "decision_owner": "desktop_session_lifecycle",
+        "never_sufficient_alone": [
+          "provider_proxy_setting",
+          "proxy_protocol_name",
+          "measurement_hostname_reachability",
+          "worker_supplied_dns_boolean"
+        ]
+      },
       "webrtc_public_candidates_must_match_observed_exit": true,
       "webrtc_private_candidate_rejected": true,
       "requires_visible_browser_acknowledgement_before_targets": true,

@@ -73,6 +73,11 @@ test("worker protocol matches the canonical desktop control-plane contract", () 
     "webrtc_relay_candidate",
   ])
   assert.equal(contract.route_check.qualification.does_not_claim_to_measure_dns_resolver_identity, true)
+  assert.equal(contract.route_check.qualification.current_proxy_dns_qualification_available, true)
+  assert.equal(
+    contract.route_check.qualification.proxy_dns_evidence.decision_owner,
+    "desktop_session_lifecycle",
+  )
   assert.equal(contract.route_check.qualification.requires_complete_webrtc_candidate_gathering, true)
   assert.equal(contract.route_check.qualification.requires_ipv4_and_ipv6_side_route_evidence, true)
   assert.equal(contract.route_check.operations.decision.authorization, "desktop_attempt_token")
